@@ -1,0 +1,31 @@
+name: nophonechallenge # <--- BELANGRIJK: ZORG DAT DIT OVEREENKOMT MET JE EIGEN PROJECTNAAM!
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  qr_flutter: ^4.0.0 # Voor de QR-code op het profielscherm
+  fl_chart: ^0.68.0 # Voor de grafiek op het feel tracker scherm (optioneel, maar aanbevolen)
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Om een logo in de QR code te hebben (maak de map 'assets' aan en plaats je logo daarin)
+  assets:
+      - assets/app_logo.png
