@@ -24,17 +24,17 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40),
-              TextField(
-                decoration: const InputDecoration(
+              const TextField(
+                decoration: InputDecoration(
                   labelText: 'E-mailadres',
                   prefixIcon: Icon(Icons.email_outlined),
                 ),
                 keyboardType: TextInputType.emailAddress,
               ),
               const SizedBox(height: 20),
-              TextField(
+              const TextField(
                 obscureText: true,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Wachtwoord',
                   prefixIcon: Icon(Icons.lock_outline),
                 ),

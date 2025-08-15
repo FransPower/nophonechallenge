@@ -31,7 +31,7 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 60,
-                    backgroundColor: Theme.of(context).colorScheme.surfaceVariant, // Gebruik een variant kleur
+                    backgroundColor: Theme.of(context).colorScheme.surfaceContainerHighest, // Gebruik een variant kleur
                     child: Icon(Icons.person, size: 80, color: Theme.of(context).colorScheme.onSurface),
                     // Als je een profielfoto wilt:
                     // backgroundImage: NetworkImage('https://via.placeholder.com/150'),
@@ -48,7 +48,7 @@ class ProfileScreen extends StatelessWidget {
                   Text(
                     'gebruiker@example.com', // Dynamisch ophalen
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.onBackground.withOpacity(0.8),
+                      color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
                     ),
                   ),
                 ],
@@ -68,7 +68,7 @@ class ProfileScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
-                      color: Theme.of(context).colorScheme.onBackground.withOpacity(0.05),
+                      color: Theme.of(context).colorScheme.onSurface.withOpacity(0.05),
                       blurRadius: 8,
                       offset: const Offset(0, 4),
                     ),
