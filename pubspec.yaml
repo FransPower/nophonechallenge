@@ -15,7 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   qr_flutter: ^4.0.0 # Voor de QR-code op het profielscherm
   fl_chart: ^0.68.0 # Voor de grafiek op het feel tracker scherm (optioneel, maar aanbevolen)
-
+  http: ^1.2.1
 
 dev_dependencies:
   flutter_test:
