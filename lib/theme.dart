@@ -19,13 +19,11 @@ ThemeData appTheme() {
       primary: catppuccinMauve, // Primaire kleur (bijv. knoppen, actieve items)
       secondary: catppuccinSapphire, // Secundaire kleur (bijv. accenten)
       surface: catppuccinSurface0, // Kleur voor Cards, Dialogs etc.
-      surfaceVariant: catppuccinSurface1, // Voor gedifferentieerde oppervlakken
-      background: catppuccinBase,
+      surfaceContainerHighest: catppuccinSurface1,
       error: Colors.redAccent, // Foutkleur
       onPrimary: catppuccinText, // Tekst op primaire kleur
       onSecondary: catppuccinText, // Tekst op secundaire kleur
-      onSurface: catppuccinText, // Tekst op oppervlakken
-      onBackground: catppuccinText, // Tekst op achtergrond
+      onSurface: catppuccinText, // Tekst op achtergrond
       onError: Colors.white, // Tekst op foutkleur
       brightness: Brightness.dark, // Algemene helderheid
     ),
@@ -112,11 +110,11 @@ ThemeData appTheme() {
       valueIndicatorTextStyle: const TextStyle(color: catppuccinText),
     ),
     // Chip styling (voor Add Challenge screen)
-    chipTheme: ChipThemeData(
+    chipTheme: const ChipThemeData(
       backgroundColor: catppuccinSurface0,
       selectedColor: catppuccinMauve,
-      labelStyle: const TextStyle(color: catppuccinText),
-      secondaryLabelStyle: const TextStyle(color: catppuccinText),
+      labelStyle: TextStyle(color: catppuccinText),
+      secondaryLabelStyle: TextStyle(color: catppuccinText),
       checkmarkColor: catppuccinText,
     ),
   );

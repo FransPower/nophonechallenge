@@ -65,11 +65,11 @@ class _FeelTrackerScreenState extends State<FeelTrackerScreen> {
                         });
                       },
                       activeColor: Theme.of(context).colorScheme.primary,
-                      inactiveColor: Theme.of(context).colorScheme.surfaceVariant,
+                      inactiveColor: Theme.of(context).colorScheme.surfaceContainerHighest,
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text('1 (Slecht)'),
                         Text('5 (Geweldig)'),
                       ],
@@ -98,11 +98,11 @@ class _FeelTrackerScreenState extends State<FeelTrackerScreen> {
                         show: true,
                         drawVerticalLine: true,
                         getDrawingHorizontalLine: (value) => FlLine(
-                          color: Theme.of(context).colorScheme.surfaceVariant,
+                          color: Theme.of(context).colorScheme.surfaceContainerHighest,
                           strokeWidth: 1,
                         ),
                         getDrawingVerticalLine: (value) => FlLine(
-                          color: Theme.of(context).colorScheme.surfaceVariant,
+                          color: Theme.of(context).colorScheme.surfaceContainerHighest,
                           strokeWidth: 1,
                         ),
                       ),
@@ -147,7 +147,7 @@ class _FeelTrackerScreenState extends State<FeelTrackerScreen> {
                       ),
                       borderData: FlBorderData(
                         show: true,
-                        border: Border.all(color: Theme.of(context).colorScheme.surfaceVariant, width: 1),
+                        border: Border.all(color: Theme.of(context).colorScheme.surfaceContainerHighest, width: 1),
                       ),
                       minX: 0,
                       maxX: 6,
@@ -177,7 +177,7 @@ class _FeelTrackerScreenState extends State<FeelTrackerScreen> {
                       lineTouchData: LineTouchData(
                         touchTooltipData: LineTouchTooltipData(
                           getTooltipColor: (LineBarSpot touchedSpot) { // <-- Belangrijke correctie hier: Type is LineBarSpot
-                            return Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.9);
+                            return Theme.of(context).colorScheme.surfaceContainerHighest.withOpacity(0.9);
                           },
                           getTooltipItems: (List<LineBarSpot> touchedSpots) { // <-- Belangrijke correctie hier: Type is LineBarSpot
                             return touchedSpots.map((LineBarSpot spot) { // <-- Explicitly cast spot to LineBarSpot

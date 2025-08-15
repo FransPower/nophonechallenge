@@ -39,7 +39,7 @@ class _AddChallengeScreenState extends State<AddChallengeScreen> {
                 });
               },
               activeColor: Theme.of(context).colorScheme.secondary, // Blauwe kleur
-              inactiveColor: Theme.of(context).colorScheme.surfaceVariant,
+              inactiveColor: Theme.of(context).colorScheme.surfaceContainerHighest,
             ),
             const SizedBox(height: 30),
             Text(
